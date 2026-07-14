@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valyuta Konvertori</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="converter-box">
+        <h2>Valyuta Konvertori</h2>
+        
+        <div class="input-group">
+            <label for="amount">Miqdor:</label>
+            <input type="number" id="amount" value="1" min="1">
+        </div>
+
+        <div class="selection-group">
+            <div class="select-box">
+                <label>Dan:</label>
+                <select id="fromCurrency">
+                    <option value="USD" selected>USD - AQSH Dollari</option>
+                    <option value="EUR">EUR - Yevro</option>
+                    <option value="RUB">RUB - Rossiya Rubli</option>
+                    <option value="UZS">UZS - O'zbek So'mi</option>
+                </select>
+            </div>
+
+            <div class="swap-btn" id="swapBtn">⇆</div>
+
+            <div class="select-box">
+                <label>Ga:</label>
+                <select id="toCurrency">
+                    <option value="UZS" selected>UZS - O'zbek So'mi</option>
+                    <option value="USD">USD - AQSH Dollari</option>
+                    <option value="EUR">EUR - Yevro</option>
+                    <option value="RUB">RUB - Rossiya Rubli</option>
+                </select>
+            </div>
+        </div>
+
+        <button id="convertBtn">Konvertatsiya qilish</button>
+        <div class="result-box">
+            <p id="resultText">Hisoblanmoqda...</p>
+        </div>
+    </div>
+
+    <script src="./script/js.js"></script>
+</body>
+</html>
